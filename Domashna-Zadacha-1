@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Domashna #1 89/2020</title>
+    </head>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            float: left;
+            margin-right: 10px; 
+        }
+        </style>
+   
+
+    <body>
+        <br>
+        <br>
+
+        <table style="width: 25%;">
+
+            <!--Prv red-->
+            <tr>
+                <th colspan="2">
+                    Pizza Shop 2.0
+                </th>
+                
+            </tr>
+
+
+            <!--Vtor red-->
+
+            <tr>
+                <td>Name</td>
+                <td><input></input></td>
+            </tr>
+
+            <!--Tret red-->
+            <tr>
+
+                <td>Pizza Toppping</td>
+            
+                <td>
+
+                    <ul>
+                        <li>Supreme</li><br>
+                        <li>Vegetariann</li><br>
+                        <li>Hawaiian</li>
+                    </ul>
+
+
+                </td>
+            </tr>
+
+            <!--Cetvrt red-->
+            <tr>
+                <td>
+                    Pizza sauce
+                </td>
+                <td>
+                 <label for="Pizza sauce"></label>
+
+                    <select name style = "lighting-color: aqua;"Pizza sauce id="Pizza sauce">
+                        <option value="Tomato">Tomato</option>
+                        <option value="Mustard">Mustard</option>
+                        <option value="Mayonnaise">Mayonnaise</option>
+                        <option value="Barbeque">Barbeque</option>
+                      </select>
+               </td>
+ 
+            </tr>
+        
+            <!--Petti red-->
+            <tr>
+                    <td>Optional Extras</td>
+                    <td><ul class="float-left">
+                        <li>Extra Cheese</li>
+                        <li>Gluten Free Base</li>
+                      </ul>
+                      </td>
+            </tr>
+        
+            <!--Shesti red-->
+            <tr>
+                    <td colspan="2">Delivery Instructions: <br>
+                        <textarea id="expandable-textarea" rows="4" cols="60"></textarea></td>
+            </tr>
+
+        <!--Sedmi red-->
+
+            <tr>
+                    <td colspan="2"><button>Send my Order</button></td>
+            </tr>
+
+
+        </table>
+    </body>
+</html>
