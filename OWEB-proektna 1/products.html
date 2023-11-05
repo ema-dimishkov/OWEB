@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="products.css">
+    <title>Продукти</title>
+</head>
+
+<body>
+
+   <h2> Галерија</h2>
+<div class="full-img" id="fullImgBox">
+
+    <img src="parfem-1.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X </span>
+
+</div>
+        <div class="img-gallery">
+            
+            <img src="pic/parfem-1.jpg" onclick="openFullImg(this.src)">
+            <img src="pic/parfem-2.jpg" onclick="openFullImg(this.src)">
+            <img src="pic/parfem-3.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-4.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-5.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-6.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-7.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-8.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-9.jpg"onclick="openFullImg(this.src)">
+            <img src="pic/parfem-10.jpg"onclick="openFullImg(this.src)">
+        
+        </div>
+
+<script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src =pic;
+
+}
+
+function closeFullImg(){
+
+    fullImgBox.style.display = "none";
+
+}
+
+</script>
+
+
+<footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Контакт</a></li>
+    <li><a href="#">Нашите услуги</a></li>
+    <li><a href="#">Политика за приватност</a></li>
+    <li><a href="#">Услови и правила</a></li>
+    <li><a href="#">Кариера</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    ELITA Copyright © 2023 - All rights reserved E.D.
+    </div>
+    </div>
+    </footer>
+    
+</body>
+</html> 

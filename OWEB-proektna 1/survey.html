@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="survey.css">
+    <title>Анкета</title>
+<h2> Пополнете ја нашата анкета</h2>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+        </header>
+        <form action="" id="survey-form">
+
+           
+            <div class="form-group">
+                <label for="name">Име</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Внесете го вашето име:" required>
+            </div>
+         
+
+      
+            <div class="form-group">
+                <label for="email">e-mail</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Внесете e-mail адреса:" required>
+            </div>
+          
+
+         
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Внесете го вашиот мобилен број:" required>
+            </div>
+        
+
+       
+            <div class="form-group">
+                <label for="address">Адреса <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Внесете ја вашата адреса на живеење:">
+            </div>
+        
+         
+            <div class="form-group">
+                <p id="quest">Од каде дозна за нашата продавница?</p>
+                <label for="">
+                    <input type="radio" name="source" value="Пријатели"
+                    class="inputRadio"
+                    checked> Пријатели
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Телевизија"
+                    class="inputRadio"
+                    >Телевизија
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Социјални мрежи"
+                    class="inputRadio"
+                    > Социјални мрежи
+                </label>
+            
+                <label for="">
+                    <input type="radio" name="source" value="Друго"
+                    class="inputRadio"
+                    > Друго
+                </label>
+            </div>
+           
+
+        
+            <div class="form-group">
+                <p id="quest">Колку сте задаволни од нашите парфеми? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> 100% - 80%
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> 80% - 60%
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  60% - 40%
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> 40% - 20%
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> 20% - 0%
+                </label>
+            </div>
+           
+
+       
+            <div class="form-group">
+                <p id="quest">Повратна информација</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Внеси повратна информација..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Прати</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Контакт</a></li>
+        <li><a href="#">Нашите услуги</a></li>
+        <li><a href="#">Политика за приватност</a></li>
+        <li><a href="#">Услови и правила</a></li>
+        <li><a href="#">Кариера</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        ELITA Copyright © 2023 - All rights reserved E.D.
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
