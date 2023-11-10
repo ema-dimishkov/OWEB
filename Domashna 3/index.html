@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Domashna #3 89/2020</title  
+        </head>
+        
+        <body>
+            <h1> Guess the word game</h1>
+            <h4> Programming words</h4>
+
+<div class="class">
+        <p id="word-display"></p>
+        <p id="message"></p>
+        <input type="text" id="guess-input" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+</div>
+
+        <script>
+            const programmingWords = ['javascript', 'python', 'java', 'html', 'bootstrap', 'ruby', 'shell', 'csharp', 'typescript', 'swift', 'cplusplus', 'react', 'angular', 'nodejs', 'django',
+                'express', 'vuejs', 'flutter', 'mongodb', 'mysql' ];
+
+            const maxWordLength = 8;
+        let attemptsLeft;
+            let currentWord;
+            let displayWord;
+
+    
+            function startGame(){
+                attemptsLeft = 5;     
+                currentWord =getRandomWord();
+                displayWord = currentWord.substring(0, 3) + '_'.repeat(currentWord.length - 3);
+                updateDisplay();
+            }
+
+        
+            function getRandomWord(){
+                const randomIndex = Math.floor(Math.random() * programmingWords.length);
+            return programmingWords[randomIndex];
+        }
+
+        function updateDisplay(){
+            document.getElementById('word-display').innerText = displayWord;
+            document.getElementById('message').innerText = `Attempts left: ${attemptsLeft}`;
+            }
+
+        
+            function checkGuess(){
+            const guessInput = document.getElementById('guess-input').value.toLowerCase();
+
+            if (guessInput.length !== currentWord.length) {
+            alert('Please enter a word with the correct word length. ');
+            return;
+        }
+
+        if (guessInput === currentWord){
+            alert('Congratulations! You guessed the word.');
+            startGame();
+        } 
+        else { 
+            attemptsLeft--;
+
+            if (attemptsLeft === 0) {
+                alert(`You ran out of attempts. The correct word was "${currentWord}".`);
+                startGame();
+            } 
+                else {
+                alert('Incorrect guess. Try again.');
+                updateDisplay();
+            }
+        }
+            document.getElementById('guess-input').value = '';
+    }
+                startGame();
+
+        </script>
+
+    </body>
+    </html>
